@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnWriting</title>
+    <link rel="stylesheet" href="./OnWriting.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <img class="opaqueImage" src="./images/Background.jpg" alt="Image of a Forest">
+
+        <div class="content">
+            <header>
+                <!--Site Navigation-->
+                <nav>
+                    <ul>
+                        <li class="navbar"><a href="./index.html">Home</a></li>
+                        <li class="navbar"><a href="./TheAuthors.html">The Authors</a></li>
+                        <li class="navbar"><a href="./OnWriting.html">On Writing</a></li>
+                        <li class="navbar"><a href="./OnPublishing.html">On Publishing</a></li>
+                        <li class="navbar"><a href="./ViewLater.html">Saved for Later</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <!--Blogpost-like information on writing-->
+                <h1 class="title">On Writing</h1>
+                <p>As we started to write from roughly 12 years of age, our language and writing style developed over
+                    time. We also tapped into classic mistakes of plotting a story.</p>
+
+                <!--Image-->
+                <img src="./images/Pen and Paper.jpg" alt="image of pen and paper">
+
+                <div class="centre">
+                    <!--Save for later button-->
+                    <button type="button" onclick="saveImage('./images/Pen and Paper.jpg')">Save for later</button>
+                </div>
+
+                <h2>Revision 1</h2>
+                <p>Placeholder to introduce first revision at age 16 - 4 years after starting it.<br>Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Saepe libero iure obcaecati aperiam tempore quidem.
+                    Reiciendis voluptatum debitis quo cum ullam architecto dolore explicabo consequatur odit labore.
+                    Magni, natus repellat!</p>
+                <h2>Revision 2</h2>
+                <p>Placeholder to introduce second revision at age 22 - 10 years after starting.<br>Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Ducimus vel alias asperiores omnis eaque porro. Velit,
+                    voluptatem corrupti sapiente animi recusandae ut dolore at repellendus assumenda, amet quasi iure!
+                    Quia?</p>
+                <h2>Revision 3</h2>
+                <p>Placeholder to introduce third revision at age 26 - 14 years after starting.<br>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Libero velit illum iusto porro, obcaecati mollitia
+                    exercitationem. Omnis aliquid ex, cupiditate mollitia vitae, rerum adipisci quo sapiente sint,
+                    voluptatibus possimus fugit.</p>
+
+                <!--External Link-->
+                <h3 class="spacing">Further Reading</h3>
+                <ul class="spacing">
+                    <li><a href="https://www.goodreads.com/book/show/10569.On_Writing">Stephen King's On Writing</a>
+                    </li>
+                    <li><a href="https://www.goodreads.com/book/show/2360064.How_Not_to_Write_a_Novel">Howard Mittelmark
+                            and Sandra Newman's How not to write a novel</a></li>
+                </ul>
+
+                <form>
+                    <h1>Leave a comment</h1>
+                    <fieldset>
+                        <h2>What have you learned about writing?</h2>
+                        <p>Example Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam
+                            incidunt, facilis aspernatur fugiat a enim autem quasi, soluta qui consequuntur tempore
+                            repudiandae harum! Ex blanditiis eaque amet tempore molestiae.</p>
+                        <!--Like a post-->
+                        <div class="centre" id="likeBtn">
+                            <button  type="botton">Like</button>
+                        </div>
+                        <!--Leave a comment-->
+                        <input type="text" placeholder="What I learned about writing ... ">
+                        <br>
+                        <div class="centre">
+                            <button id="comment" type="botton">Leave Comment</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </main>
+
+            <footer>
+                <!--Footer with contact information and social media-->
+                <h3 class="footer">Get in touch</h3>
+                <nav>
+                    <ul>
+                        <li class="navbar"><a>Email</a></li>
+                        <li class="navbar"><a>Twitter</a></li>
+                        <li class="navbar"><a>Instagram</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./Capstone.js"></script>
+
+</body>
+
+</html>

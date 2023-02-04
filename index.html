@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fláronêlle</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <img class="opaqueImage" src="./images/Background.jpg" alt="Image of a Forest">
+
+
+        <div class="content">
+            <header>
+                <!--Site Navigation-->
+                <nav>
+                    <ul>
+                        <li class="navbar"><a href="./index.html" >Home</a></li>
+                        <li class="navbar"><a href="./TheAuthors.html" >The Authors</a></li>
+                        <li class="navbar"><a href="./OnWriting.html" >On Writing</a></li>
+                        <li class="navbar"><a href="./OnPublishing.html" >On Publishing</a></li>
+                        <li class ="navbar"><a href="./ViewLater.html" >Saved for Later</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h1 class="title">Discover Fláronêlle</h1>
+                <img id="map"  src="./images/@map120821 Mitte.png" alt="Map of Fláronêlle">
+
+                <!--Save for later button-->
+                <button class="disappear" onclick="saveImage('./images/@map120821 Mitte.png')" type="button">Save for later</button>
+
+                <!--Introduction Flaronelle-->
+                <h2>Enter a magical world</h2>
+                <div class="flexBox">
+                    <p class="blurp" id="padding">Placeholder for an introduction to the magical world<br>Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit.
+                        Aliquam, quasi cum. Iste, ex! Quae saepe ipsa aspernatur assumenda et praesentium tempora
+                        fuga quibusdam laudantium aut quaerat nesciunt, ad qui velit.Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Aliquam, quasi cum. Iste, ex! Quae saepe ipsa aspernatur assumenda et
+                        praesentium tempora fuga
+                        quibusdam laudantium aut quaerat nesciunt, ad qui velit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quasi cum. Iste, ex! Quae
+                        saepe ipsa aspernatur
+                        assumenda et praesentium tempora fuga quibusdam laudantium aut quaerat nesciunt, ad qui velit.
+                    </p>
+                    <!--Image of castle-->
+                    <img id="castle"  src="./images/Burg.jpg" alt="Book cover">
+
+                </div>
+                <div id="right-align">
+
+                <!--Save for later button-->
+                <button id="right" class="disappear" onclick="saveImage('./images/Burg.jpg')" type="button">Save for later</button>
+            </div>
+                <!--Meet Maréen and Mellanie - cartoons and character description of main characters; grid display-->
+                <div class="characterIntro">
+                    <div class="M1">
+                        <h2>Meet Maréen</h2>
+                        <p>Placeholder to give a glimpse of the character.<br>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Quo labore consequuntur impedit amet quas ratione repudiandae voluptate
+                            rerum quaerat at corrupti exercitationem voluptatibus, autem nostrum accusamus iusto vitae
+                            numquam fuga.</p>
+                    </div>
+                    <div class="M2">
+                        <h2>Meet Mellanie</h2>
+                        <p>Placeholder to give a glimpse of the character.<br>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Reprehenderit iste cum tempore quia blanditiis, consequatur dicta
+                            accusamus quasi, accusantium ducimus ipsum mollitia? Quidem excepturi ea saepe ullam
+                            voluptate amet et.</p>
+                    </div>
+                </div>
+
+                <!--Book cover and Blurb-->
+                <h2>Fláronêlle - "The Discovery"</h2>
+
+                <div class="flexBox">
+                    <!--Bookcover-->
+                    <img src="./images/DALL·E 2023-01-12 22.45.38.png" alt="Book cover">
+
+
+                    <!--Blurp-->
+                    <p class="blurp">Placeholder to summarise the story.<br>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Aliquam, quasi cum. Iste, ex! Quae saepe ipsa aspernatur assumenda et praesentium tempora
+                        fuga quibusdam laudantium aut quaerat nesciunt, ad qui velit.Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Aliquam, quasi cum. Iste, ex! Quae saepe ipsa aspernatur assumenda et
+                        praesentium tempora fuga
+                        quibusdam laudantium aut quaerat nesciunt, ad qui velit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quasi cum. Iste, ex! Quae
+                        saepe ipsa aspernatur
+                        assumenda et praesentium tempora fuga quibusdam laudantium aut quaerat nesciunt, ad qui velit.
+                    </p>
+                </div>
+
+                <!--Save for later button-->
+                <button type="button" onclick="saveImage('./images/DALL·E 2023-01-12 22.45.38.png')">Save for later</button>
+            </main>
+
+            <!--Button and Form: Become a Testreader-->
+            <form>
+                <h2 id="noBottomMargin">Sign up and become a Testreader</h2>
+                <div class="grid">
+                    <fieldset class="details">
+                        <h3>Your Details</h3>
+                        <p>How can we contact you?</p>
+                        <label for="first-name">First name<input id="first-name" name="first-name" type="text" required
+                                placeholder="e.g. Jane" /></label>
+                        <label for="last-name">Last name<input id="last-name" name="last-name" type="text" required
+                                placeholder="e.g. Smith" /></label>
+                        <label for="email">Email address<input id="email" name="email" type="email" required
+                                placeholder="e.g. Jane.Smith@gmail.com" /></label>
+                    </fieldset>
+                    <fieldset class="about">
+                        <h3>About You</h3>
+                        <p>Which genre do you normally read?</p>
+                        <label for="Fantasy"><input id="Fantasy" type="radio" name="genre" />Fantasy</label>
+                        <br>
+                        <label for="Science-fiction"><input id="Science-fiction" type="radio"
+                                name="genre" />Science-fiction</label>
+                        <br>
+                        <label for="youngAdult"><input id="youngAdult" type="radio" name="genre" />Young Adult</label>
+                    </fieldset>
+                </div>
+                <input type="submit" value="Submit" />
+            </form>
+
+            <footer>
+                <!--Footer with contact information and social media-->
+                <h3 class="footer">Get in touch</h3>
+                <nav>
+                    <ul>
+                        <li class="navbar"><a>Email</a></li>
+                        <li class="navbar"><a>Instagram</a></li>
+                        <li class="navbar"><a>Twitter</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./Capstone.js"></script>
+</body>
+
+</html>

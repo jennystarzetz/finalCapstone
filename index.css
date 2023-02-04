@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*styling the background*/
+.background {
+    overflow: hidden;
+    position: relative;
+}
+
+.opaqueImage {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    margin: 10%;
+    background-color: rgb(244, 241, 238);
+    padding: 1vw 1vh;
+    box-shadow: 0 0 40px rgb(244, 241, 238);
+}
+
+/*navigation bar and header*/
+nav ul {
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(16, 94, 39, 0.5);
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.navbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color:   rgb(244, 241, 238);
+}
+
+/*sizing of headlines, paragraphs*/
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.title {
+    padding-top: 5vh;
+    font-size: 4em;
+}
+
+h1, h2, h3, p, label, .navbar, button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#noBottomMargin {
+    margin-bottom: 0;
+}
+
+#map {
+    margin-bottom: 20px;
+}
+
+/*blurp and cover*/
+.flexBox{
+    display: flex;
+}
+
+img {
+    width: 100%;
+    min-width: 50%;
+    height: auto;
+    padding-top: 2.5%;
+    padding-right: 5px;
+    object-fit: contain;
+}
+
+.blurp {
+    text-align: justify;
+}
+
+#padding {
+    padding-right: 5px;
+}
+
+/*styling character introduction*/
+.characterIntro {
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+.M1 {
+    grid-column: 1;
+    padding-right: 5px;
+}
+
+.M2 {
+    grid-column: 2;
+    padding-left: 5px;
+}
+
+/*form*/
+
+/*to but form sections next to each other*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+form {
+    margin: 0 auto;
+}
+
+/*styling the form*/
+fieldset {
+    border: none;
+    padding-bottom: 2em;
+}
+
+input {
+    margin: 5px 0;
+    width: 100%;
+    min-height: 1em;
+}
+
+.details  {
+   grid-column: 1;
+   grid-row: 1;
+   max-width: 75%;
+   padding-right: 10%;
+}
+
+.about {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 100%;
+    display: block;
+}
+
+/*styling radio button*/
+input[type="radio"] {
+    width: 1em;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*styling submit button*/
+input[type="submit"] {
+    display: block;
+    width: 25%;
+    margin: 1em auto;
+    background-color: rgba(16, 94, 39, 0.5);
+    min-width: 300px;
+    border: none;
+    font: inherit;
+    padding: 1vh 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*footer*/
+.footer {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/*screensize responsiveness - breakpoints*/
+@media screen and (max-width: 700px) {
+    #map {
+        display: none;
+    }
+
+    #castle {
+        display: none;
+    }
+
+    #noBottomMargin {
+        font-size: 100%;
+    }
+
+    .disappear {
+        display: none;
+    }
+}
+
+/*button save later*/
+button {
+    background-color: rgba(16, 94, 39, 0.5);
+    border: none;
+    padding: 1vh 1vw;
+}
+
+#right {
+    text-align: right;
+}
+
+#right-align {
+    text-align: right;
+    margin-right: 5px;
+}

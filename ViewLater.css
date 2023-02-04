@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*styling the background*/
+.background {
+    overflow: hidden;
+    position: relative;
+}
+
+.opaqueImage {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    margin: 10%;
+    background-color: rgb(244, 241, 238);
+    padding: 1vw 1vh;
+    box-shadow: 0 0 40px rgb(244, 241, 238);
+}
+
+/*navigation bar and header*/
+nav ul {
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(16, 94, 39, 0.5);
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.navbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color:   rgb(244, 241, 238);
+}
+
+/*sizing of headlines, paragraphs*/
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.title {
+    padding-top: 5vh;
+    font-size: 4em;
+}
+
+h1, h2, h3, p, label, .navbar, button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/*footer*/
+.footer {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/*screensize responsiveness - breakpoints*/
+@media screen and (max-width: 700px) {
+    #map {
+        display: none;
+    }
+
+    #castle {
+        display: none;
+    }
+
+    #noBottomMargin {
+        font-size: 100%;
+    }
+
+    .disappear {
+        display: none;
+    }
+}
+
+/*button save later*/
+button {
+    background-color: rgba(16, 94, 39, 0.5);
+    border: none;
+    padding: 1vh 1vw;
+}
+
+#right {
+    text-align: right;
+}
+
+#right-align {
+    text-align: right;
+    margin-right: 5px;
+}

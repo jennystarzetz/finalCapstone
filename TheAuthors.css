@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*styling the background*/
+.background {
+    overflow: hidden;
+    position: relative;
+}
+
+.opaqueImage {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    margin: 10%;
+    background-color: rgb(244, 241, 238);
+    padding: 1vw 1vh;
+    box-shadow: 0 0 40px rgb(244, 241, 238);
+}
+
+/*navigation bar and header*/
+nav ul {
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(16, 94, 39, 0.5);
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.navbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color:   rgb(244, 241, 238);
+}
+
+
+/*sizing of headlines and paragraphs*/
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.title {
+    padding-top: 5vh;
+    font-size: 4em;
+}
+
+h1, h2, h3, p, label, .navbar, .quote {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    width: 100%;
+    min-width: 50%;
+    height: auto;
+    margin: 0em 1em 1em 0em;
+    padding: 0% 30%;
+    object-fit: contain;
+}
+
+.quote {
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    border-top: 2px double rgb(0, 0, 0);
+    border-bottom: 2px double rgb(0, 0, 0);
+    letter-spacing: .2rem;
+}
+
+/*styling JJ introduction*/
+.characterIntro {
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+.M1 {
+    grid-column: 1;
+    padding-right: 5%;
+}
+
+.M2 {
+    grid-column: 2;
+    padding-left: 5%;
+}
+
+/*footer*/
+.footer {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+/*responsiveness - breakpoint*/
+@media screen and (max-width: 700px) {
+    .quote {
+        text-align: center;
+        font-size: 100%;
+        font-style: italic;
+        border-top: 2px double rgb(0, 0, 0);
+        border-bottom: 2px double rgb(0, 0, 0);
+        letter-spacing: normal;
+    }
+}
+
+/*button save later*/
+button {
+    background-color: rgba(16, 94, 39, 0.5);
+    border: none;
+    padding: 1vh 1vw;
+}
+
+#centre {
+    text-align: center;
+}
